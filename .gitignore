@@ -1,0 +1,8 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+kafka-key.pem
+*.code-workspace
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate*
