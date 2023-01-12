@@ -1,6 +1,6 @@
 # Kafka Cluster in AWS
 
-This repository is to deploy a Kafka cluster with Terraform and Ansible in Amazon Web Services(AWS) using Docker.
+This repository is to deploy a Kafka cluster with Terraform and Ansible in Amazon Web Services(AWS) using Docker as development environment.
 There are some steps that still require manual interaction, however, this can be changed in the future to be fully automated.
 The following [tutorial](https://github.com/mlomboglia/kafka-cluster-infra) was used. Please read it for more insformation.
 
@@ -10,13 +10,13 @@ The following [tutorial](https://github.com/mlomboglia/kafka-cluster-infra) was 
     Download the `your-key.pem`file.
 
 2) Clone the repository using:
-    `git clone xxx`
+    `git clone https://github.com/SilkeDH/kafka-cluster.git`
 
 3) Rename the `your-key.pem` to `kafka-key.pem` and place it in the `secrets`directory.
 
 4) Fill out the `env.list` file with your AWS [access keys](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html).
 
-5) Check the `terraform/variables.tf` file and modify the variables according to your needs. **Note:**Kafka needs at least 7GiB of memory to be installed. For this reason `t2.large` instances are used, **this will cost you money**.
+5) Check the `terraform/variables.tf` file and modify the variables according to your needs. **Note:** Kafka needs at least 7GiB of memory to be installed. For this reason `t2.large` instances are used, **this will cost you money**.
 
 # Running the container
 The container will prepare the environment for you. It will install Python, Ansible, Terraform and other tools like OpenSSH-client.
