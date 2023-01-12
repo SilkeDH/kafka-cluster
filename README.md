@@ -63,11 +63,8 @@ We will test the cluster by sending some data using the `producer.py` and `consu
     `./consumer config.ini`
 
 # Accessing Confluent Control Center
-To get the website view of the control center, you need to connect via SSH to the control center instance and forward the port to your localhost like this:
+To get the website view of the control center just go to the public address of your control center instance ec2-x-x-x.compute-1.amazonaws.com:9021
 
-`ssh -L 9092:localhost:9092 ubuntu@ec2-x-x-x.compute-1.amazonaws.com`
-
-Open your web browser and go to `localhost:9092`. You should see the Control Center.
 
 
 
